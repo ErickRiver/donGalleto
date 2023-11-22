@@ -88,13 +88,13 @@ body {
 
 .titulos-secundarios {
     font-family: "Lato Black";
-    font-size: 32px;
+    font-size: 28px;
     margin: 0;
 }
 
 li {
     font-family: "Open Sans Regular";
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /*** HOME ***/
@@ -152,14 +152,19 @@ li.nav-item a:hover {
     border-bottom: 4px solid var(--clr-amarillo);
 }
 
+.nav-item:last-child{
+    display: none;
+    cursor: pointer;
+}
+
 .contenedor-corte {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 80vh;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     gap: 20px;
-    padding: 0px 20px;
 }
 
 .contenedor1,
@@ -173,11 +178,11 @@ li.nav-item a:hover {
 
 input {
     background-color: transparent;
-    width: 90%;
-    height: 40px;
+    width: 80%;
+    height: 30px;
     border: 3px solid black;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     font-family: "Open Sans Regular", sans-serif;
     padding: 0px 20px;
@@ -190,23 +195,22 @@ input {
 .contenedor1 .galletas {
     border-radius: 20px;
     border: 3px solid black;
-    width: 90%;
+    width: 80%;
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    padding: 10px 20px;
 }
 
 .btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 80px;
+    width: 280px;
+    height: 60px;
     background-color: var(--clr-verde);
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
     font-weight: 700;
     border: none;
     cursor: pointer;
@@ -219,6 +223,7 @@ input {
 
 .btn span {
     font-family: "Open Sans Regular", sans-serif;
+    font-size: 16px;
     position: relative;
     z-index: 2;
     transition: .3s ease all;
@@ -226,7 +231,7 @@ input {
 
 .btn::after {
     content: "";
-    width: 300px;
+    width: 280px;
     height: 200%;
     position: absolute;
     top: -200%;
@@ -258,7 +263,7 @@ input {
     align-items: center;
     border-radius: 20px;
     border: 3px solid black;
-    width: 90%;
+    width: 80%;
     height: auto;
 }
 
@@ -279,6 +284,10 @@ input {
 
     #navbar-icon:hover {
         transform: scale(1.2);
+    }
+
+    .nav-item:last-child{
+        display: block;
     }
 
     .navbar {

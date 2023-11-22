@@ -152,6 +152,11 @@ li.nav-item a:hover {
     border-bottom: 4px solid var(--clr-amarillo);
 }
 
+.nav-item:last-child{
+    display: none;
+    cursor: pointer;
+}
+
 /*** MATERIA PRIMA ***/
 .contenedor {
     display: flex;
@@ -375,6 +380,10 @@ textarea {
 }
 
 @media screen and (max-width: 1000px) {
+    .nav-item:last-child{
+        display: block;
+    }
+
     #navbar-icon {
         display: flex;
         position: fixed;

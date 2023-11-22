@@ -81,7 +81,7 @@ body {
 .titulos {
     display: block;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 50px;
     font-family: "BrightRetro", sans-serif;
     font-size: 60px;
 }
@@ -160,10 +160,9 @@ li.nav-item a:hover {
 .contenedor-corte {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 80vh;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px;
     gap: 20px;
 }
 
@@ -196,7 +195,6 @@ input {
     border-radius: 20px;
     border: 3px solid black;
     width: 80%;
-    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
